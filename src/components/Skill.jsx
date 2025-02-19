@@ -68,12 +68,13 @@ const Skill = () => {
     <section className="section" id="skill">
       <div className="container">
         <h2 className="headline-2">Tools</h2>
-
         <p className="text-zinc-400 mt-3 mb-8 max-w-[55ch]">Check out the essential tools and technologies I use to develop top-notch, high-performance websites and applications.</p>
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,_1fr))]">
-          {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard imgSrc={imgSrc} label={label} desc={desc} key={key} />
-          ))}
+        <div className="relative max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-800 p-2 rounded-lg">
+          <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,_1fr))]">
+            {skillItem.map(({ imgSrc, label, desc }, key) => (
+              <SkillCard imgSrc={imgSrc} label={label} desc={desc} key={key} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

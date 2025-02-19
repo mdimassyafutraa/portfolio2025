@@ -3,7 +3,7 @@ import { number } from 'prop-types';
 const aboutItems = [
   {
     label: 'Project done',
-    number: 10,
+    number: 4,
   },
   {
     label: 'Years of experience',

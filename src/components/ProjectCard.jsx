@@ -18,14 +18,16 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
             ))}
           </div>
         </div>
-        <div className="w-11 h-11 rounded-lg grid place-items-center bg-[#1B4242] text-zinc-50 shrink-0">
-          <span className="material-symbols-rounded" aria-hidden="true">
-            arrow_outward
-          </span>
-        </div>
+        {projectLink !== '#' && (
+          <div className="w-11 h-11 rounded-lg grid place-items-center bg-[#1B4242] text-zinc-50 shrink-0">
+            <span className="material-symbols-rounded" aria-hidden="true">
+              arrow_outward
+            </span>
+          </div>
+        )}
       </div>
 
-      <a href={projectLink} target="_blank" className="absolute inset-0"></a>
+      {projectLink !== '#' ? <a href={projectLink} target="_blank" rel="noopener noreferrer" className="absolute inset-0"></a> : <a href={projectLink} className="absolute inset-0"></a>}
     </div>
   );
 };
