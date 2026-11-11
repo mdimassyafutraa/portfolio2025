@@ -70,6 +70,7 @@ const Contact = () => {
             className="lg:col-span-5 space-y-4"
             data-aos="fade-right"
           >
+
             <a
               href={whatsappUrl}
               target="_blank"
@@ -78,10 +79,14 @@ const Contact = () => {
               className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900 transition-all duration-300 flex items-center justify-between group shadow-sm"
             >
               <div className="flex items-center gap-4 min-w-0">
-                <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-300 group-hover:text-white group-hover:scale-105 shrink-0 transition-all">
-                  <span className="material-symbols-rounded text-2xl">
-                    chat
-                  </span>
+                <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center group-hover:scale-105 shrink-0 transition-all">
+                  <img
+                    src="/img/icon/whatsapp.svg"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 object-contain"
+                  />
                 </div>
 
                 <div className="min-w-0">
@@ -99,17 +104,23 @@ const Contact = () => {
                 </div>
               </div>
 
-              <span className="material-symbols-rounded text-zinc-400 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0">
-                arrow_forward
+              <span className="material-symbols-rounded text-xs">
+                open_in_new
               </span>
             </a>
 
+
             <div className="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
+
               <div className="flex items-center gap-4 mb-5">
-                <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 shrink-0">
-                  <span className="material-symbols-rounded text-2xl">
-                    mail
-                  </span>
+                <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center shrink-0">
+                  <img
+                    src="/img/icon/gmail.svg"
+                    alt=""
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 object-contain"
+                  />
                 </div>
 
                 <div className="min-w-0">
@@ -126,6 +137,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+
 
               <div className="flex items-center gap-2 pt-4 border-t border-zinc-800">
                 <a
@@ -166,6 +178,14 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-medium text-zinc-300 hover:text-white transition-all flex items-center gap-2"
                 >
+                  <img
+                    src="/img/icon/linkedin.svg"
+                    alt=""
+                    width={18}
+                    height={18}
+                    loading="lazy"
+                    className="w-[18px] h-[18px] object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+                  />
                   LinkedIn
                   <span className="material-symbols-rounded text-xs">
                     open_in_new
@@ -178,6 +198,14 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-medium text-zinc-300 hover:text-white transition-all flex items-center gap-2"
                 >
+                  <img
+                    src="/img/icon/github.svg"
+                    alt=""
+                    width={18}
+                    height={18}
+                    loading="lazy"
+                    className="w-[18px] h-[18px] object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+                  />
                   GitHub
                   <span className="material-symbols-rounded text-xs">
                     open_in_new
@@ -190,6 +218,14 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-medium text-zinc-300 hover:text-white transition-all flex items-center gap-2"
                 >
+                  <img
+                    src="/img/icon/instagram.svg"
+                    alt=""
+                    width={18}
+                    height={18}
+                    loading="lazy"
+                    className="w-[18px] h-[18px] object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+                  />
                   Instagram
                   <span className="material-symbols-rounded text-xs">
                     open_in_new
