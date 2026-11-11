@@ -1,52 +1,52 @@
 import PropTypes from 'prop-types';
 
-const ButtonPrimary = ({ label, href, target = '_self', icon, classes }) => {
+const ButtonPrimary = ({ label, href, target = '_self', icon, classes = '' }) => {
   if (href) {
     return (
-      <a href={href} target={target} className={'btn btn-primary  ' + classes}>
+      <a href={href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className={`btn btn-primary ${classes}`}>
         {label}
-        {icon ? (
+        {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
           </span>
-        ) : undefined}
+        )}
       </a>
     );
   } else {
     return (
-      <button className={'btn btn-primary ' + classes}>
+      <button className={`btn btn-primary ${classes}`}>
         {label}
-        {icon ? (
+        {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
           </span>
-        ) : undefined}
+        )}
       </button>
     );
   }
 };
 
-const ButtonOutLine = ({ label, href, target = '_self', icon, classes }) => {
+const ButtonOutLine = ({ label, href, target = '_self', icon, classes = '' }) => {
   if (href) {
     return (
-      <a href={href} target={target} className={'btn btn-outline ' + classes}>
+      <a href={href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className={`btn btn-outline ${classes}`}>
         {label}
-        {icon ? (
+        {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
           </span>
-        ) : undefined}
+        )}
       </a>
     );
   } else {
     return (
-      <button className={'btn btn-outline ' + classes}>
+      <button className={`btn btn-outline ${classes}`}>
         {label}
-        {icon ? (
+        {icon && (
           <span className="material-symbols-rounded" aria-hidden="true">
             {icon}
           </span>
-        ) : undefined}
+        )}
       </button>
     );
   }
