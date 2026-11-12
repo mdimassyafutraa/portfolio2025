@@ -567,9 +567,9 @@ const WorkDetail = ({ workId, onBack }) => {
             onClick={(e) => e.stopPropagation()}
           >
 
-            <p className="text-xs sm:text-sm font-medium text-zinc-300 truncate max-w-md">
+            {/* <p className="text-xs sm:text-sm font-medium text-zinc-300 truncate max-w-md">
               {gallery[activePhotoIndex].title || 'Dokumentasi'}
-            </p>
+            </p> */}
 
             <a
               href={gallery[activePhotoIndex].src}
