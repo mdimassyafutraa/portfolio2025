@@ -1,4 +1,3 @@
-
 export const projectsData = [
   {
     id: 1,
@@ -99,11 +98,28 @@ export const projectsData = [
       'Pengaturan dasar SEO untuk membantu visibilitas website.',
     ],
   },
+
+  {
+    id: 6,
+    imgSrc: '/img/project/project-6.png',
+    title: 'Digijockeys',
+    category: 'Business Project',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion', 'supabase', 'Business Website'],
+    projectLink: 'https://digijockeys.vercel.app/',
+
+    fullDesc:
+      'Membangun dan mengembangkan website resmi Digijockeys, sebuah bisnis digital kreatif yang berfokus pada layanan pengembangan website, desain, dan solusi digital. Proyek ini mencakup perancangan identitas digital bisnis, pengembangan website company profile, serta penyajian layanan dan portofolio untuk memperkuat kehadiran bisnis secara online. Dikembangkan secara mandiri dengan peran sebagai Founder dan Web Developer.',
+
+    highlights: [
+      'Membangun identitas digital dan website resmi Digijockeys.',
+      'Mengembangkan website company profile untuk kebutuhan bisnis.',
+      'Menyajikan informasi layanan, portofolio, dan profil bisnis.',
+      'Mengimplementasikan desain responsif untuk desktop dan mobile.',
+      'Mengembangkan animasi dan interaksi menggunakan Framer Motion.',
+      'Mengoptimalkan pengalaman pengguna dan tampilan website.',
+      'Mengelola pengembangan dan deployment website bisnis.',
+    ],
+  },
 ];
 
-export const projectCategories = [
-  'All',
-  'Bank Mandiri',
-  'PT KAI',
-  'Freelance',
-];
+export const projectCategories = ['All', 'Bank Mandiri', 'PT KAI', 'Freelance', 'Business Project'];
